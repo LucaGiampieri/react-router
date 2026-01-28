@@ -1,4 +1,3 @@
-import NavBar from "../component/NavBar"
 
 function HomePage() {
 
