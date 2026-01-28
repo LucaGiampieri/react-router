@@ -22,7 +22,6 @@ function Products() {
 
     return (
         <>
-            <NavBar />
             <h1 className="product-title" >Products:</h1>
             <div className="card-container">
                 {productsList.map(product => (

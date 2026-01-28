@@ -6,16 +6,20 @@ import HomePage from "./pages/HomePage"
 import AboutUs from "./pages/AboutUs"
 import Products from "./pages/Products"
 
-function App() {
+//import del DefaultLayout
+import DefaultLayout from "./component/layots/DefaultLayout"
 
+function App() {
 
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/products" element={<Products />} />
+          <Route element={<DefaultLayout />} >
+            <Route path="/" element={<HomePage />} />
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/products" element={<Products />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

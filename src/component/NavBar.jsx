@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 
 function NavBar() {
 
+    //creaimo una costante da dove poi estrapolare i dati
     const links = [
         { path: '/', label: 'HomePage' },
         { path: '/aboutus', label: 'Chi siamo' },
