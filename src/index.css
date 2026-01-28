@@ -1,0 +1,41 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Generics */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 5px solid black;
+  padding-bottom: 0.85rem;
+}
+
+/* NavBar */
+
+.navbar {
+  padding: 0.5rem;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: black;
+}
