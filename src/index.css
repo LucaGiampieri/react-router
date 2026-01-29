@@ -129,41 +129,34 @@ img {
   padding: 2.5rem;
   background-color: antiquewhite;
   display: flex;
+  min-height: 100vh;
 }
 
 .img-container-detail {
   flex-basis: 40%;
-  background-color: white;
-  border: 1px solid brown;
-  border-radius: 20px;
 }
 
 .link-container-detail {
   display: flex;
   justify-content: space-around;
-  position: relative;
-
 }
 
 .card-last-detail {
   font-size: 3rem;
   color: black;
-  position: absolute;
-  left: 5rem;
-  top: 1rem;
 }
 
 .card-next-detail {
   font-size: 3rem;
   color: black;
-  position: absolute;
-  right: 5rem;
-  top: 1rem;
 }
 
 .img-card-detail {
   aspect-ratio: 1 / 1;
   padding: 5rem;
+  background-color: white;
+  border: 1px solid brown;
+  border-radius: 20px;
 }
 
 .card-text-container-detail {
