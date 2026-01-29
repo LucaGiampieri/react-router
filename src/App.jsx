@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import AboutUs from "./pages/AboutUs"
 import Products from "./pages/Products"
+import ProductDetail from "./component/ProductDetail"
 
 //import del DefaultLayout
 import DefaultLayout from "./component/layots/DefaultLayout"
@@ -18,7 +19,10 @@ function App() {
           <Route element={<DefaultLayout />} >
             <Route path="/" element={<HomePage />} />
             <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/products" element={<Products />} />
+            <Route path="/products">
+              <Route index element={<Products />} />
+              <Route path=":id" element={<ProductDetail />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

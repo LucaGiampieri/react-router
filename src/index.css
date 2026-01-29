@@ -79,22 +79,16 @@ img {
 
 .card {
   flex-basis: calc((100% - 3rem) / 2);
-  height: 460px;
   padding: 1rem;
   border: 1px solid black;
   border-radius: 20px;
   background-color: antiquewhite;
-
-}
-
-.card-separator {
   display: flex;
-  height: 60%;
-  margin-bottom: 1rem;
 }
 
 .img-container {
   flex-basis: 40%;
+  aspect-ratio: 1 / 1;
   background-color: white;
   border: 1px solid black;
   border-radius: 20px;
@@ -114,9 +108,15 @@ img {
 
 .card-name {
   margin-bottom: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.card-price {
+  font-size: 2rem;
+  margin-top: 0.4rem;
+  font-weight: 900;
 }
 
 .card-category {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
