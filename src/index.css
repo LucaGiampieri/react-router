@@ -122,3 +122,60 @@ img {
 .card-category {
   margin-top: 1rem;
 }
+
+/* Card Detail */
+
+.card-detail {
+  padding: 2.5rem;
+  background-color: antiquewhite;
+  display: flex;
+}
+
+.img-container-detail {
+  flex-basis: 40%;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.card-text-container-detail {
+  flex-basis: 60%;
+  padding: 0 5rem;
+}
+
+.card-rating-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.card-name-detail {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.card-price-detail {
+  font-size: 3rem;
+  margin-top: 0.4rem;
+  font-weight: 900;
+}
+
+.card-category-detail {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.card-description-detail {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.card-returning-detail {
+  display: block;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-top: 2rem;
+}
