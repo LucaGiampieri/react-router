@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
+import { useParams } from "react-router-dom";
 
 function ProductDetailCard(props) {
 
-    const { product, id } = props
+    const { product } = props
+    const { id } = useParams();
 
     return (
         <div
