@@ -6,9 +6,13 @@ import HomePage from "./pages/HomePage"
 import AboutUs from "./pages/AboutUs"
 import Products from "./pages/Products"
 import ProductDetail from "./products/ProductDetail"
+import Cart from "./pages/Cart"
 
 //import del DefaultLayout
 import DefaultLayout from "./component/layots/DefaultLayout"
+
+//import pagina error
+import NotFound from "./pages/NotFound"
 
 function App() {
 
@@ -23,7 +27,9 @@ function App() {
               <Route index element={<Products />} />
               <Route path=":id" element={<ProductDetail />} />
             </Route>
+            <Route path="/cart" element={<Cart />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </>
