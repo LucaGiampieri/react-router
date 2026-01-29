@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function CardProduct(props) {
 
     const { product } = props
@@ -19,9 +21,9 @@ function CardProduct(props) {
                         Count: {product.rating.count}
                     </div>
                 </h4>
-                <h2 className="card-name">
+                <Link to={`/products/${product.id}`} className="card-name">
                     {product.title}
-                </h2>
+                </Link>
                 <h3 className="card-price">
                     {product.price} $
                 </h3>

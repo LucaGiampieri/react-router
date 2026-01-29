@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
-import CardProduct from "../component/CardProduct";
+import CardProduct from "../products/CardProduct";
 
 
 function Products() {
